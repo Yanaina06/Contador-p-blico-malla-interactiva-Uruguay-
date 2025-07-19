@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  margin: 0;
+  padding: 0;
+}
+.titulo-malla {
+  text-align: center;
+  color: #e91e63;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.malla-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+.semestre-col {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px #e91e6322;
+  min-width: 220px;
+}
+.semestre-header {
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.materia-card {
+  background: #f8bbd0;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  padding: 0.9rem 0.6rem;
+  box-shadow: 0 1px 4px #e91e6322;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 6px solid #e91e63;
+  position: relative;
+  opacity: 1;
+}
+.materia-card.bloqueada {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.materia-card.aprobada {
+  text-decoration: line-through;
+  background: #ffe0e6;
+  border-left: 6px solid #c2185b;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.materia-card.opcional {
+  border-left: 6px solid #ffd600;
+  background: #fffde7;
+}
+.materia-nombre {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+.materia-area {
+  font-size: 0.9rem;
+  color: #ad1457;
+}
+.materia-creditos {
+  font-size: 0.85rem;
+  color: #333;
+}
+.materia-requisitos {
+  font-size: 0.8rem;
+  color: #444;
+  margin-top: 0.3rem;
+}
+.materia-requisitos ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.btn-reset {
+  display: block;
+  margin: 2rem auto;
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e91e6322;
+}
+.btn-reset:hover {
+  background: #c2185b;
+}
