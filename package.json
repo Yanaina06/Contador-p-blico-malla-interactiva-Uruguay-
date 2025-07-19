@@ -1,0 +1,17 @@
+{
+  "name": "malla-contador-interactiva",
+  "version": "1.0.0",
+  "description": "Malla interactiva rosa para la carrera de contador público",
+  "main": "src/App.jsx",
+  "scripts": {
+    "start": "parcel index.html --port 3000",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
